@@ -1,24 +1,39 @@
-# demo1
+# Vue2-fast
 
-## Project setup
-```
-yarn install
-```
+Vue2 快速启动框架
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+Vue.js 2 Quick Start Framework
 
-### Compiles and minifies for production
-```
-yarn build
-```
 
-### Lints and fixes files
-```
-yarn lint
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+⭐️框架已封装**axios**，**vuex**，**vue-router**
+
+
+
+## 集成依赖 Integration dependencies
+
+* vue 2.6.11
+* element-ui 3.6.5
+
+* vue-router 3.5.3
+* vuex 3.6.2
+* less 4.1.2
+* axios 0.26.1
+* js-cookie 3.0.1
+
+
+
+## 项目目录
+
+![image-20220322001539208](C:\Users\win8y\AppData\Roaming\Typora\typora-user-images\image-20220322001539208.png)
+
+
+
+## 快速启动
+
+`$ git clone https://github.com/bestCoverJ/vue2-fast.git`
+
+`$ cd vue2-fast `
+
+`$ yarn && yarn dev`
+
