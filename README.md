@@ -23,13 +23,13 @@ Vue.js 2 Quick Start Framework
 
 
 
-## 项目目录
+## 项目目录 Project directory
 
 ![image-20220322001539208](C:\Users\win8y\AppData\Roaming\Typora\typora-user-images\image-20220322001539208.png)
 
 
 
-## 快速启动
+## 快速启动 Quick Start
 
 `$ git clone https://github.com/bestCoverJ/vue2-fast.git`
 
