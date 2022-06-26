@@ -17,6 +17,30 @@ module.exports = {
   assetsDir: 'static',
   lintOnSave: true,
   productionSourceMap: false,
+  css: {
+    loaderOptions: {
+      less: {
+        // 若 less-loader 版本小于 6.0，请移除 lessOptions 这一级，直接配置选项。
+        lessOptions: {
+          modifyVars: {
+            // 直接覆盖变量
+            // 'text-color': '#111',
+            // 'border-color': '#eee',
+            // 或者可以通过 less 文件覆盖（文件路径为绝对路径）
+            // hack: `true; @import "your-less-file-path.less";`
+          }
+        }
+      },
+      postcss: {
+        plugins: [
+          require('postcss-px2rem')({
+            // 以设计稿750为例， 750 / 10 = 75
+            remUnit: 37.5
+          })
+        ]
+      }
+    }
+  },
   // 开发服务配置
   devServer: {
     port: port,
@@ -30,7 +54,7 @@ module.exports = {
       // 匹配 /api 前缀
       '/api': {
         // 代理的地址
-        target: 'http://192.168.0.100:8080/',
+        target: 'https://netease-cloud-music-ogyz2c1dv-bestcoverj.vercel.app/',
         changOrigin: true,
         // 将 /api 替换为 /
         pathRewrite: {

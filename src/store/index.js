@@ -1,16 +1,24 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import getters from './getters'
+import system from './system'
 
 Vue.use(Vuex)
 
 const store = new Vuex.Store({
   state: {
-    title: 'demo'
+    title: 'demo',
+    loading: false
   },
-  mutations: {},
+  mutations: {
+    SET_LOADING(state, loading) {
+      state.loading = loading || false
+    }
+  },
   actions: {},
-  modules: {},
+  modules: {
+    system
+  },
   getters
 })
 
